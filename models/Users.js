@@ -9,7 +9,7 @@ const UserSchema = new mongoose.Schema({
         required: true,
     },
 }, {
-    versionKey: false // Exclude the __v field from the schema
+    versionKey: false
 });
 
 const UserModel = mongoose.model('users' , UserSchema);
